@@ -1,0 +1,248 @@
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #34495e;
+  background-color: #fff;
+    overflow-x: hidden;
+  margin: 0;
+}
+body.docs {
+  padding-top: 61px;
+}
+@media screen and (max-width: 900px) {
+  body.docs {
+    padding-top: 0;
+  }
+}
+a {
+  text-decoration: none;
+  color: #34495e;
+}
+img {
+  border: none;
+}
+h1,
+h2,
+h3,
+h4,
+strong {
+  font-weight: 600;
+  color: #2c3e50;
+}
+#header {
+  background-color: #fff;
+  width: 93%;
+  height: 40px;
+  padding: 10px 60px;
+  position:absolute;
+  z-index: 2;
+}
+body.docs #header{
+  position: absolute;
+}
+#logo{
+  display: inline-block;
+  line-height: 40px;
+}
+#logo img{
+  vertical-align: middle;
+  margin-right: 6px;
+  width: 150px;
+}
+#nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 40px;
+  line-height: 40px;
+}
+#nav li{
+  display: inline-block;
+  position: relative;
+  margin: 0 0.6em;
+}
+#nav .nav-link{
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+#nav .nav-link:hover{
+  border-bottom: block;
+}
+#nav .nav-link:hover{
+  border-bottom: 3px solid #015eab;
+}
+#nav .nav-btn{
+    background-color: #015eab;
+    color: #ffffff;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+/* slick slider plugin */
+.sliderWrapper {
+	width 						: 100%;
+	height 					  : 100vh;
+	position 					: relative;
+	overflow          : hidden;
+}
+
+.slider div {
+	position   				: relative;	
+}
+.slider div img{
+    width: 100%;
+    height: 100vh;
+}
+.slider div img{
+    content: "";
+    background-color: rgba(0,0,0,0.5);
+    filter        : blur(2px);
+    filter: brightness(50%);
+    -moz-filter   : blur(2px);
+    -webkit-filter: blur(2px);
+    -o-filter     : blur(2px);
+    -moz-filter   : brightness(50%);
+    -webkit-filter: brightness(50%);
+    -o-filter     : brightness(50%);
+
+}
+
+.button {
+	position : absolute;
+	bottom : 45%;
+	z-index : 200;
+	cursor : pointer;
+	color: #1c5785;
+	font-size : 2em;
+}
+
+.sliderNext {
+	right 						: 5%;
+}
+
+.sliderPrev {
+	left 						  : 5%;
+}
+
+.slider p {
+   position: absolute;
+   color: #ffffff;
+     font-family: 'Pacifico', cursive;
+  font-size : 40px;
+  font-weight : bold;
+    text-align: center;
+	left: 40%;
+    margin-left: -200px;
+    top: 30%;
+	z-index:100;
+}
+.slider p span{
+    font-size: 20px;
+    text-align: center;
+}
+.slider p .hero-btn{
+    font-family: none;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+    background-color:  #015eab;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.search_feilds{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.6);
+    width: 100%;
+    line-height: 60px;
+    height: 4em;
+    border-radius: 5px;
+}
+.search_input{
+    margin-left: 50px;
+    
+}
+
+.search_feilds input[type="text"]{
+    font-family: FontAwesome,'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    width: 300px;
+    height: 35px;
+    margin-left: -4px;
+}
+.search_feilds select{
+    width: 200px;
+    color: darkgrey;
+    font-family: FontAwesome,'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    height: 40px;
+    margin-left: -4px;
+}
+.search_feilds input[type="submit"]{
+    height: 38px;
+    width: 38px;
+    border: none;
+    text-transform: uppercase;
+    background-color: #015eab;
+    font-family: FontAwesome,'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    color: #ffffff;
+    
+}
+/* slick slider ----------------------------- */
+.destinations h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
+.destinations .slick-slider { height: 30% }
+.destinations .slick-slide { }
+.destinations .slick-slide:hover { }
+.destinations .slick-slide img { transition: all 0.3s ease; width: 100%; }
+.destinations .slick-slide:hover img { opacity: 0.5;left: -12.5%; }
+.destinations .slick-slide.slick-loading img { }
+.destinations .slick-slide.dragging img { }
+.destinations .slick-initialized .slick-slide { }
+.destinations .slick-loading .slick-slide { }
+.destinations .slick-vertical .slick-slide { }
+/* Slick slider: Arrows */
+.destinations .slick-prev, .slick-next { position: absolute; font: normal normal normal 30px/0 FontAwesome; cursor: pointer;top: 70px; width: 1.5em; height: 1.5em; margin: 0;color:transparent; background: none; border: none; transition: all 0.3s ease; }
+.destinations .slick-slider:hover .slick-prev, .slick-slider:hover .slick-next { }
+.destinations .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {  }
+.destinations .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before { }
+.destinations .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { }
+.destinations .slick-prev:before, .slick-next:before { font-family: inherit; font-size: inherit; display: inline-block; opacity: 1; }
+.destinations .slick-prev { left: 0 }
+.destinations .slick-prev:before { content: '\f104';
+font-family: FontAwesome;
+color: #000000;
+}
+.destinations .slick-next { right: 0 }
+.destinations .slick-next:before { content: '\f105';
+ color: #000000;
+}
+/* Slick slider: Dots */
+.destinations .slick-slider { }
+.destinations .slick-dots { }
+.destinations .slick-dots li { }
+.destinations .slick-dots li button { }
+.destinations .slick-dots li button:hover, .slick-dots li button:focus { }
+.destinations .slick-dots li button:hover:before, .slick-dots li button:focus:before { }
+.destinations .slick-dots li button:before { }
+.destinations .slick-dots li.slick-active button:before { }
+/* Slick slider: Content */
+.destinations .slick-slide { }
+.destinations .slick-slide a { position: relative; display: block; text-decoration: none; }
+.destinations .slick-slide h2 { font-family: 'Open Sans', sans-serif;font-size: 15px; font-weight: bold; margin: 0 auto; background-color: #fff; position: relative; overflow: hidden; color: #333; padding: 0.5em; width: 80%; margin-top: -7%; }
+.destinations .slick-slide .thumbnail:after { content: ''; position: absolute; width: 1px; height: 100%; right: 0; top: 0; background-color: rgba(128,128,128,0.66); }
+.destinations .slick-slide .thumbnail:last-child { }
